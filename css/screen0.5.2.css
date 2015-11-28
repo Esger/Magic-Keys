@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	border:0;
+	margin:0;
+	font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:12px;
+}
+.r{
+	float:right;
+}
+.highlight{
+	background-color:#ffc !important;
+}
+.clearFix{
+	clear:both;
+}
+.hidden{
+	display:none;
+}
+#container,
+#data{
+	margin:12px auto;
+	width:470px;
+} 
+#container{
+	position:relative;
+	z-index:100;
+	padding:30px 0 30px 30px;
+	background: rgb(226,226,226); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(137,137,137,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(100%,rgba(137,137,137,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(137,137,137,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(137,137,137,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(137,137,137,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#898989',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(226,226,226,1) 0%,rgba(137,137,137,1) 100%); /* W3C */
+	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	-moz-box-shadow: 0 3px 4px #222;
+	-webkit-box-shadow: 0 3px 4px #222;
+	box-shadow: 0 3px 4px #222;
+}
+
+#stats{
+	margin-left:12px;
+	width:410px;
+}
+#stats a{
+	color:#000;
+	text-decoration:none;
+}
+#stats a:hover{
+	text-decoration:underline;
+}
+h2{
+	font:bold 18px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:30px 0 15px 0;
+	text-shadow:0px 1px 1px #fff;
+}
+p{
+	font:normal 12px/14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-bottom:8px;
+}
+span{
+	font:inherit;
+}
+p span.good,
+p span.bad,
+span.ratio,
+p span.total{
+	background-color:#080;
+	color:#fff;
+	font-weight:bold;
+	padding:3px;
+}
+p span.bad{
+	background-color:#f00;
+}
+p span.total{
+	background-color:#00f;
+}
+span.flags{
+	float:right;
+}
+span.flags a{
+	display:inline-block;
+	background:url(../images/lang.png) no-repeat;
+	background-position:0 0;
+	width:16px;
+	height:11px;
+}
+span.flags a.en{
+	background-position:-16px 0;
+}
+span.ratio{
+	color:#000;
+	background-color:transparent;
+	font:inherit;
+}
+textarea{
+	border:1px inset #888;
+	margin:12px 12px 12px 17px;
+	width:400px;
+	height:200px;
+	font-size:18px;
+	line-height:24px;
+}
+
+/* The keyboard */
+#keyboard{
+	margin:9px;
+}
+#mainblocks{
+	float:left;
+}
+#mainblocks>div{
+	width:331px;
+	display:none;
+}
+#mainblocks> #mainkeys, #mainblocks> #botkeys{
+	display:block;
+}
+#modblocks{
+	float:left;
+}
+#modblocks>div{
+	width:100px;
+}
+.key{
+	float:left;
+	width:70px;
+	height:70px;
+	margin:5px;
+	text-align:center;
+	background-color:#fff;
+	border:1px solid #666;
+	-moz-box-shadow: 0 2px 3px #111;
+	-webkit-box-shadow: 0 2px 3px #111;
+	box-shadow: 0 2px 3px #111;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.mod{
+	background-color:#e4e4e4;
+}
+.key:hover{
+	cursor:pointer;
+}
+.key a{
+	color:#000;
+	text-decoration:none;
+	display:block;
+	width:75px;
+	height:70px;
+	font:normal 30px/70px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	overflow:hidden;
+	text-shadow:0px 1px 1px #ccc;
+}
+#num a{
+	font:normal 28px/70px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#nextset a{
+	color:#080;
+	font-weight:bold;
+}
+#typed{
+	font:normal 18px "Courier New", Courier, monospace;
+	background-color:#fff;
+	width:396px;
+	height:194px;
+	overflow:auto;
+	margin:15px;
+	padding:3px 4px;
+	-webkit-box-shadow: inset 1px 1px 2px 0px #888;
+	-moz-box-shadow: inset 1px 1px 2px 0px #888;
+	box-shadow: inset 1px 1px 2px 0px #888;	
+}
+
+#toggleAnalytics{
+	float:right;
+	margin-top:12px;
+}
+
+/* Ads */
+#ads{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+	z-index:0;
+}
+
+/* AddThis */
+.addThis{
+	position:fixed;
+	left:2px;
+	top:2px;
+}
